@@ -17,12 +17,12 @@ def is_enabled(value, default):
 
 
 class Config(object):
-    API_ID = int(os.environ.get("API_ID"))
-    API_HASH = os.environ.get("API_HASH")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+    API_ID = int(os.environ.get("25403301"))
+    API_HASH = os.environ.get("d700b4abe3d023165894291b6fcbd3a0")
+    BOT_TOKEN = os.environ.get("7585830486:AAEIfqrVUoX9sSVGXaO0ICVhbQVh7EuOsyw")
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "tg_bot")
     DATABASE_URL = os.environ.get("DATABASE_URL", None)
-    OWNER_ID = int(os.environ.get("OWNER_ID"))
+    OWNER_ID = int(os.environ.get("1081310808"))
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "0"))
     WEB_SERVER = is_enabled(os.environ.get("WEB_SERVER", "False"), False)
     THUMBNAILS = list(map(str, os.environ.get("THUMBNAILS", "").split()))
